@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titlepage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:lineSpacingExtra="8dp"
+        android:text="In your dreams!"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/subtitlepage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="6dp"
+        android:lineSpacingExtra="8dp"
+        android:text="Start your exercises to gain your muscle"
+        android:textColor="#B3B8C0"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titlepage" />
+
+    <ImageView
+        android:id="@+id/shapeabs"
+        android:layout_width="match_parent"
+        android:layout_height="123dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/shapeabs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subtitlepage" />
+
+    <TextView
+        android:id="@+id/tvabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
+        android:text="ABS Shapes"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/shapeabs"
+        app:layout_constraintEnd_toEndOf="@+id/shapeabs"
+        app:layout_constraintStart_toStartOf="@id/shapeabs"
+        app:layout_constraintTop_toTopOf="@+id/shapeabs" />
+
+    <TextView
+        android:id="@+id/tvabssub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
+        android:text="All Levels and Beginners"
+        android:textColor="#B3B8C0"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/shapeabs"
+        app:layout_constraintEnd_toEndOf="@+id/shapeabs"
+        app:layout_constraintStart_toStartOf="@id/shapeabs"
+        app:layout_constraintTop_toTopOf="@+id/shapeabs"
+        app:layout_constraintVertical_bias="0.781" />
+
+    <ImageView
+        android:id="@+id/shapearm"
+        android:layout_width="match_parent"
+        android:layout_height="123dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="6dp"
+        android:src="@drawable/shapearm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shapeabs" />
+
+    <TextView
+        android:id="@+id/tvarm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
+        android:text="Arm Shapes"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/shapearm"
+        app:layout_constraintEnd_toEndOf="@+id/shapearm"
+        app:layout_constraintStart_toStartOf="@id/shapearm"
+        app:layout_constraintTop_toTopOf="@+id/shapearm" />
+
+    <TextView
+        android:id="@+id/tvarmsub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
+        android:text="All Levels and Beginners"
+        android:textColor="#B3B8C0"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/shapearm"
+        app:layout_constraintEnd_toEndOf="@+id/shapearm"
+        app:layout_constraintStart_toStartOf="@id/shapearm"
+        app:layout_constraintTop_toTopOf="@+id/shapearm"
+        app:layout_constraintVertical_bias="0.781" />
+
+    <ImageView
+        android:id="@+id/shapechest"
+        android:layout_width="match_parent"
+        android:layout_height="123dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="6dp"
+        android:src="@drawable/shapechest"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shapearm" />
+
+    <TextView
+        android:id="@+id/tvchest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
+        android:text="Chest Shapes"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/shapechest"
+        app:layout_constraintEnd_toEndOf="@+id/shapechest"
+        app:layout_constraintStart_toStartOf="@id/shapechest"
+        app:layout_constraintTop_toTopOf="@+id/shapechest" />
+
+    <TextView
+        android:id="@+id/tvchestsub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
+        android:text="All Levels and Beginners"
+        android:textColor="#B3B8C0"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/shapechest"
+        app:layout_constraintEnd_toEndOf="@+id/shapechest"
+        app:layout_constraintStart_toStartOf="@id/shapechest"
+        app:layout_constraintTop_toTopOf="@+id/shapechest"
+        app:layout_constraintVertical_bias="0.781" />
+
+    <ImageView
+        android:id="@+id/shapeleg"
+        android:layout_width="match_parent"
+        android:layout_height="123dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="6dp"
+        android:src="@drawable/shapeleg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shapechest" />
+
+    <TextView
+        android:id="@+id/tvleg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
+        android:text="Chest Shapes"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/shapeleg"
+        app:layout_constraintEnd_toEndOf="@+id/shapeleg"
+        app:layout_constraintStart_toStartOf="@id/shapeleg"
+        app:layout_constraintTop_toTopOf="@+id/shapeleg" />
+
+    <TextView
+        android:id="@+id/tvlegsub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
+        android:text="All Levels and Beginners"
+        android:textColor="#B3B8C0"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/shapeleg"
+        app:layout_constraintEnd_toEndOf="@+id/shapeleg"
+        app:layout_constraintStart_toStartOf="@id/shapeleg"
+        app:layout_constraintTop_toTopOf="@+id/shapeleg"
+        app:layout_constraintVertical_bias="0.781" />
+
+</android.support.constraint.ConstraintLayout>
