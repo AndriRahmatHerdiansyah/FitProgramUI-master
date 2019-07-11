@@ -13,10 +13,9 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class EditWorkAct extends AppCompatActivity {
-
+public class EditWorkAct3 extends AppCompatActivity {
     TextView titlepage, subtitlepage, fitonetitle, fitonedesc,
-                workvalue, fittwotitle, fittwodesc, btnexercise;
+            workvalue, fittwotitle, fittwodesc, btnexercise;
 
     Button btnlocked, btnadd, btnremove;
 
@@ -24,28 +23,31 @@ public class EditWorkAct extends AppCompatActivity {
 
     View divpage, bgprogress;
 
-    LinearLayout fitone, fittwo;
+    LinearLayout fitone, fittwo, fitthree, fitfour;
 
-    Animation bttone, bttwo, bttfour, bttfive;
+    Animation bttone, bttwo, bttfour, bttfive, bttsix;
 
     int sumworkout = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_edit_work);
+        setContentView(R.layout.activity_edit_work_act3);
 
         // load animations
         bttone = AnimationUtils.loadAnimation(this, R.anim.bttone);
         bttwo = AnimationUtils.loadAnimation(this, R.anim.bttwo);
         bttfour = AnimationUtils.loadAnimation(this, R.anim.bttfour);
         bttfive = AnimationUtils.loadAnimation(this, R.anim.bttfive);
+        bttsix = AnimationUtils.loadAnimation(this, R.anim.bttsix);
 
         titlepage = findViewById(R.id.titlepage);
         subtitlepage = findViewById(R.id.subtitlepage);
 
         fitone = findViewById(R.id.fitone);
         fittwo = findViewById(R.id.fittwo);
+        fitthree = findViewById(R.id.fitthree);
+        fitfour = findViewById(R.id.fitfour);
 
         divpage = findViewById(R.id.divpage);
         bgprogress = findViewById(R.id.bgprogress);
@@ -117,6 +119,8 @@ public class EditWorkAct extends AppCompatActivity {
 
         fitone.startAnimation(bttwo);
         fittwo.startAnimation(bttfour);
+        fitthree.startAnimation(bttfive);
+        fitfour.startAnimation(bttsix);
 
         btnexercise.startAnimation(bttfive);
         bgprogress.startAnimation(bttfive);
@@ -125,7 +129,7 @@ public class EditWorkAct extends AppCompatActivity {
         btnexercise.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent a = new Intent(EditWorkAct.this, StartWorkoutAct2.class);
+                Intent a = new Intent(EditWorkAct3.this, StartWorkoutAct4.class);
                 a.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                 startActivity(a);
             }
@@ -135,11 +139,10 @@ public class EditWorkAct extends AppCompatActivity {
         fab_stop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent a = new Intent(EditWorkAct.this, ExerciseAct.class);
+                Intent a = new Intent(EditWorkAct3.this, ExerciseAct.class);
                 a.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                 startActivity(a);
             }
         });
-
     }
 }

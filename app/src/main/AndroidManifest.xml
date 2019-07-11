@@ -9,17 +9,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.example.andri.fitprogram.ExerciseAct"></activity>
-        <activity android:name="com.example.andri.fitprogram.MainActivity">
+        <activity android:name=".EditWorkAct4"></activity>
+        <activity android:name=".StartWorkoutAct4" />
+        <activity android:name=".EditWorkAct3" />
+        <activity android:name=".StartWorkoutAct3" />
+        <activity android:name=".EditWorkAct2" />
+        <activity android:name=".StartWorkoutAct2" />
+        <activity android:name=".StopWatchAct" />
+        <activity android:name=".ExerciseAct" />
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.andri.fitprogram.WorkoutAct" />
-        <activity android:name="com.example.andri.fitprogram.StartWorkAct" />
-        <activity android:name="com.example.andri.fitprogram.EditWorkAct" />
+        <activity android:name=".WorkoutAct" />
+        <activity android:name=".StartWorkAct" />
+        <activity android:name=".EditWorkAct" />
     </application>
 
 </manifest>

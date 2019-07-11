@@ -13,10 +13,10 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class EditWorkAct extends AppCompatActivity {
+public class EditWorkAct2 extends AppCompatActivity {
 
     TextView titlepage, subtitlepage, fitonetitle, fitonedesc,
-                workvalue, fittwotitle, fittwodesc, btnexercise;
+            workvalue, fittwotitle, fittwodesc, btnexercise;
 
     Button btnlocked, btnadd, btnremove;
 
@@ -24,7 +24,7 @@ public class EditWorkAct extends AppCompatActivity {
 
     View divpage, bgprogress;
 
-    LinearLayout fitone, fittwo;
+    LinearLayout fitone, fittwo, fitthree;
 
     Animation bttone, bttwo, bttfour, bttfive;
 
@@ -33,7 +33,7 @@ public class EditWorkAct extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_edit_work);
+        setContentView(R.layout.activity_edit_work_act2);
 
         // load animations
         bttone = AnimationUtils.loadAnimation(this, R.anim.bttone);
@@ -46,6 +46,7 @@ public class EditWorkAct extends AppCompatActivity {
 
         fitone = findViewById(R.id.fitone);
         fittwo = findViewById(R.id.fittwo);
+        fitthree = findViewById(R.id.fitthree);
 
         divpage = findViewById(R.id.divpage);
         bgprogress = findViewById(R.id.bgprogress);
@@ -117,6 +118,7 @@ public class EditWorkAct extends AppCompatActivity {
 
         fitone.startAnimation(bttwo);
         fittwo.startAnimation(bttfour);
+        fitthree.startAnimation(bttfive);
 
         btnexercise.startAnimation(bttfive);
         bgprogress.startAnimation(bttfive);
@@ -125,7 +127,7 @@ public class EditWorkAct extends AppCompatActivity {
         btnexercise.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent a = new Intent(EditWorkAct.this, StartWorkoutAct2.class);
+                Intent a = new Intent(EditWorkAct2.this, StartWorkoutAct3.class);
                 a.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                 startActivity(a);
             }
@@ -135,11 +137,10 @@ public class EditWorkAct extends AppCompatActivity {
         fab_stop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent a = new Intent(EditWorkAct.this, ExerciseAct.class);
+                Intent a = new Intent(EditWorkAct2.this, ExerciseAct.class);
                 a.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                 startActivity(a);
             }
         });
-
     }
 }

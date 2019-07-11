@@ -7,6 +7,21 @@
     android:background="@color/colorPrimaryDark"
     tools:context=".MainActivity">
 
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btn_stopwatch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_watch_later_black_24dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="24dp"
+        app:borderWidth="0dp"
+        android:elevation="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="#4186F3"
+        />
+
     <TextView
         android:id="@+id/titlepage"
         android:layout_width="wrap_content"
@@ -81,7 +96,7 @@
         android:layout_height="123dp"
         android:layout_marginEnd="24dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="6dp"
+        android:layout_marginTop="4dp"
         android:src="@drawable/shapearm"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
@@ -123,7 +138,7 @@
         android:layout_height="123dp"
         android:layout_marginEnd="24dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="6dp"
+        android:layout_marginTop="4dp"
         android:src="@drawable/shapechest"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
@@ -165,7 +180,7 @@
         android:layout_height="123dp"
         android:layout_marginEnd="24dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="6dp"
+        android:layout_marginTop="4dp"
         android:src="@drawable/shapeleg"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"

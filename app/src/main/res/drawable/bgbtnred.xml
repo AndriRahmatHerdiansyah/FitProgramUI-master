@@ -2,10 +2,10 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
 
     <solid
-        android:color="#191F3C"
+        android:color="#EA5769"
         />
 
     <corners
-        android:radius="8dp"
+        android:radius="200dp"
         />
 </shape>
