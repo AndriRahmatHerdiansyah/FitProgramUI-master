@@ -99,6 +99,30 @@ public class ExerciseAct extends AppCompatActivity {
                 startActivity(a);
             }
         });
+        tvarm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent a = new Intent(ExerciseAct.this,Workout2Act.class);
+                a.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                startActivity(a);
+            }
+        });
+        tvchest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent a = new Intent(ExerciseAct.this,Workout3Act.class);
+                a.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                startActivity(a);
+            }
+        });
+        tvleg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent a = new Intent(ExerciseAct.this,Workout4Act.class);
+                a.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                startActivity(a);
+            }
+        });
 
         btn_stopwatch.setOnClickListener(new View.OnClickListener() {
             @Override

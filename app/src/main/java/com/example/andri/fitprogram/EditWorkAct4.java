@@ -10,6 +10,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -23,7 +24,7 @@ public class EditWorkAct4 extends AppCompatActivity {
 
     View divpage, bgprogress;
 
-    LinearLayout fitone, fittwo, fitthree, fitfour;
+    RelativeLayout fitone, fittwo, fitthree, fitfour;
 
     Animation bttone, bttwo, bttfour, bttfive, bttsix;
 
